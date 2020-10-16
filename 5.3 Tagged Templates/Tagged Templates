@@ -1,0 +1,30 @@
+"Bentuk yang lebih kompleks dari Template Literals, memungkinkan kita untuk membaca template literals melalui sebuah function."
+- MDN Web Docs
+
+Tagged Template
+- Escaping HTML Tags
+contoh:
+function sanitize(strings, ...values) {
+    return DOMPurify.sanitize(aboutMe);
+}
+
+const name = `Rafi`;
+const aboutMe = `I love to do evil <img src="http://unsplash.it/100/100?random" onload="alert('I hacked you. Haha');" />`;
+
+const html = sanitize`
+<h3>${name}</h3>
+<p>${aboutMe}</p>
+
+- Translation & Internationalization
+contoh:
+const html = i18n`Hello ${name}, you have ${amount}:c in your bank account.`;
+
+// Hallo Steffen, Sie haben US$ 1,250.33 auf Ihrem Bankkonto.
+
+- Styled Components
+contoh:
+const Title = styled.h1`
+font-size: 1.5em;
+text-align: center;
+color: palevioletred;
+`;

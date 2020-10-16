@@ -1,0 +1,7 @@
+Error Handling : Promise
+.then() -> res
+.catch() -> rej
+
+Error Handling : Async Await
+- try -> res
+- catch() -> rej

@@ -1,0 +1,58 @@
+"Template literal adalah string literal yang memungkinkan adanya expression di dalamnya."
+- MDN Web Docs
+
+String Literal
+let nama = 'Rafi';
+let nim = "1101154125";
+let email = `rafi@gmail.com`;
+
+Template Literal
+- Menggunakan `` back tick
+- Multi-line String
+- Embedded Expression
+- HTML Fragments
+- Expression Interpolation
+- Tagged Template
+
+`string text`
+`string text baris 1
+ string text baris 2
+ string text baris 3`
+`string text ${expression} string text` // embedded expression
+tag `string text ${expression} string text` // tagged template
+
+Multi-line String
+console.log('string 1\nstring2');
+console.log(`string 1
+string 2`);
+
+Multi-line String (HTML Fragments) (1)
+const mhs = {
+    nama: 'Rafi'
+    umur: 22,
+    nim: 1101154125,
+    email: 'rafi@gmail.com'
+};
+
+let el = '';
+el += '<div class="mhs">';
+el += '<h2>' + mhs.nama + '</h2>';
+el += '<span class="nim">' + mhs.nim + '</span>';
+el += '</div>';
+console.log(el);
+
+let el = `<div class="mhs">
+    <h2>${mhs.nama}</h2>
+    <span class="nim">${mhs.nim}</span>
+</div>`;
+console.log(el);
+
+Embedded Expression
+const nama = 'Rafi';
+let umut = 22;
+console.log(`Halo , nama saya ${nama}, umur saya ${umur} tahun.`);
+
+Expression Interpolation
+let a = 10;
+let b = 15;
+console.log(`Jika a = 10 dan b = 15, maka hasil penjumlahannya adalah : ${a + b}, bukan ${2 * a + b}`);

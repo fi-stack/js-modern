@@ -1,0 +1,29 @@
+Closure?
+"Closure merupakan kombinasi antara function dan lingkungan leksikal (lexical scope) di dalam function tersebut."
+- MDN
+
+"Closure merupakan sebuah function ketika memiliki akses ke parent scope-nya, meskipun parent scope-nya sudah selesai dieksekusi."
+- w3school
+
+"Closure adalah sebuah function dikembalikan oleh function yang lain, yang memiliki akses ke lingkungan saat ia diciptakan."
+- Code Fellow
+
+"Closure adalah sebuah function yang sebelumnya sudah memiliki data, hasil dari function yang lain."
+- Techsith
+
+Lexical scope
+function init() {
+    let nama = 'Rafi'; // local variable
+    function tampilNama() { // inner function (closure)
+        console.log(nama); // akses ke parent variable
+    }
+    tampilNama();
+}
+init();
+
+Kenapa menggunakan Closure ?
+"Untuk membuat Function Factories."
+- MDN
+
+"Untuk membuat private method."
+- MDN

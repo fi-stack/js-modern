@@ -1,0 +1,46 @@
+fetch()
+"Sebuah method pada API javascript untuk mengambil resources dari jaringan, dan mengembalikan promise yang selesai(fullfilled) ketika ada response yang tersedia."
+
+Fetch adalah fungsi javascript yang menghasilkan promise
+
+fetch(resources, init);
+resources
+- URL
+alamat dari sumber yang kita akan ambil
+- Request Object
+representasi permintaan sumber
+
+init (optional)
+konfigurasi tambahan pada sebuah request berbentuk Object
+- method
+- headers
+- body
+- mode
+- cache
+- referrer
+- referrerPolicy
+- integrity
+- keepalive
+- signal
+
+response
+hasil dari fetch, berupa promise
+
+response (property)
+- headers
+- ok
+- redirected
+- status
+- statusText
+- type
+- URL
+- body
+
+response (method)
+- clone()
+- error()
+- redirect()
+- blob()
+- formData()
+- json()
+- text()

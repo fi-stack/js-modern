@@ -1,0 +1,6 @@
+Promise
+Object yang merepresentasikan keberhasilan / kegagalan sebuah event yang asynchronous di masa yang akan datang
+- janji (terpenuhi / ingkar)
+- states->keadaan (fulfilled / rejected / pending)
+- callback->menjalankan keadaan (resolve / reject / finally)
+- aksi (then / catch) -> then akan menjalankan resolve dan catch akan menjalankan reject

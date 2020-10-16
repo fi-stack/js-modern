@@ -1,0 +1,17 @@
+for..of
+for..in
+
+for..of
+"Creates a loop iterating over iterable object."
+
+Iterable object
+- String
+- Array
+- Arguments / NodeList
+- TypedArray
+- Map
+- Set
+- User-defined Iterables
+
+for..in
+"Creates a loop only iterating over enumerable."
